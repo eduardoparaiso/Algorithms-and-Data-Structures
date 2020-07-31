@@ -1,4 +1,3 @@
-//"n" is the size of the structure to be sorted by the method
 //"swap" performs the exchange of position between two elements
 
 /**
@@ -16,7 +15,9 @@
  */
 
 public class selection_sort{
-    public void selectionSort(int array[], int n){
+    public void selectionSort(int array[]){
+        int n = array.length; 
+
         for (int i = 0; i < (n - 1); i++){
             int min= i;
             for (int j = (i + 1); j < n; j++){
